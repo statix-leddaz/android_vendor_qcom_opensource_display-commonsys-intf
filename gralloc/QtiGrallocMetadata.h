@@ -82,6 +82,7 @@
 // Heap Name
 #define QTI_HEAP_NAME 10032
 #define QTI_BUFFER_DEQUEUE_DURATION 10033
+#define QTI_CRC_BUFFER 10034
 // Used to indicate to framework that internal definitions are used instead
 #define COMPRESSION_QTI_UBWC 20001
 #define INTERLACED_QTI 20002
@@ -90,6 +91,9 @@
 #define PLANE_COMPONENT_TYPE_META 20004
 
 #define MAX_NAME_LEN 256
+
+#define CRC_BUFFER_SIZE 64
+#define CRC_BUFFER_SIZE_IN_BYTES (CRC_BUFFER_SIZE * sizeof(uint32_t))
 
 // GRAPHICS_METADATA
 #define GRAPHICS_METADATA_SIZE 4096
